@@ -17,7 +17,7 @@ export class User {
   @Prop({ required: true})
   password: string
 
-  @Prop()
+  @Prop({ default: 0})
   posts: number
 
   @Prop()
@@ -26,7 +26,7 @@ export class User {
   @Prop()
   updatedAt: Date
 
-  @Prop()
+  @Prop({ default: null})
   deletedAt: Date
 
   @Prop({ default: false})
